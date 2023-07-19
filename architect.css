@@ -7,8 +7,15 @@
 }
 
 /* shared styles */
-btn-primary{
-       
+.btn-primary {
+       cursor: pointer;
+       font-weight: 600;
+       border: none;
+       font-size: 1.25rem;
+       color: white;
+       padding: 20px 30px;
+       border-radius: 8px;
+       background: #FF900E;
 }
 
 /* header styles */
@@ -64,5 +71,29 @@ nav li a {
        font-size: 1rem;
        line-height: 26px;
 }
+.banner img{
+       margin-top: 20px;
+       width: 100%;
+}
 
-.
+/* responsive media queries */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+       header{
+              padding: 20px;
+       }
+       nav{
+              flex-direction: column;
+       }
+}
+
+/* tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+       header{
+              padding: 50px;
+       }
+       nav{
+              flex-direction: column;
+       }
+
+}
